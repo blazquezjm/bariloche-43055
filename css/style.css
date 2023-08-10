@@ -29,6 +29,7 @@ header{
     background-color: #BBBFCA;
     justify-content: space-between;
     align-items: center;
+    flex-flow: wrap;
 
 }
 .brc{
@@ -50,6 +51,7 @@ header{
     list-style: none;
     gap: 1.25rem;
     padding-right: 1rem;
+    flex-flow: wrap;
 }
 
 .navbar li a{
@@ -71,7 +73,7 @@ body{
 }
 .img-index{
     width: 100%;
-    height: 400px;
+    height: 18.75rem;
     grid-column: 1 / 7;
     grid-row: 1 / 2;
 }
@@ -624,8 +626,128 @@ COMIENZA PAGINA ACTIVIDADES */
 /* --------------------------------------------------------------------------------- */
 /* COMIENZA PAGINA GASTRONOMIA */
 
-.grid-gastronomia{
+.main-gastronomia{
     grid-area: main;
+}
+.grid-gastronomia{
+    display: grid;
+    grid-template-rows: repeat(4, 21.875rem);
+}
+.restaurantes{
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 5rem 16.875rem;
+    justify-items: center;
+}
+.restaurantes h3{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+.rest1{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    text-align: center;
+    width: 12.5rem;
+    height: 50%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.rest1 iframe{
+    width: 80%;
+    height: 9.375rem;
+    align-self: center;
+    border-radius: 50%;
+    
+}
+.rest2{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    text-align: center;
+    width: 12.5rem;
+    height: 50%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.rest2 iframe{
+    width: 80%;
+    height: 9.375rem;
+    align-self: center;
+    border-radius: 50%;
+    
+}
+.rest3{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+    width: 12.5rem;
+    height: 50%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.rest3 iframe{
+    width: 80%;
+    height: 9.375rem;
+    align-self: center;
+    border-radius: 50%;
+    
+}
+.rest4{
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    text-align: center;
+    width: 12.5rem;
+    height: 50%;
+    padding-top: 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.rest4 iframe{
+    width: 80%;
+    height: 9.375rem;
+    align-self: center;
+    border-radius: 50%;
+    
+}
+.cervecerias{
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 5rem 16.875rem;
+    justify-items: center;
+}
+.cervecerias h3{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+.chocolaterias{
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 5rem 16.875rem;
+    justify-items: center;
+}
+.chocolaterias h3{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
+}
+.heladerias{
+    grid-row: 4 / 5;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 5rem 16.875rem;
+    justify-items: center;
+}
+.heladerias h3{
+    grid-column: 2 / 4;
+    grid-row: 1 / 2;
 }
 
 .gastronomiaUno{
