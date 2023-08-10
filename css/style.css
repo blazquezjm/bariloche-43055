@@ -757,9 +757,13 @@ COMIENZA PAGINA ACTIVIDADES */
     background-color: #BBBFCA;
 }
 
+/* ------------------------------------------------------- */
+/* COMIENZA CONTACTO */
+
+
 .contacto{
     font-family: 'Inria Serif', serif;
-    font-size: 36px;
+    font-size: 28px;
     letter-spacing: 0.5px;
 }
 
@@ -835,10 +839,10 @@ COMIENZA PAGINA ACTIVIDADES */
     text-align: center;
 }
 footer h3{
-    font-size: 26px;
+    font-size: 24px;
 }
 footer h5{
-    font-size: 26px;
+    font-size: 24px;
 }
 footer p{
     font-size: 16px;
