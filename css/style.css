@@ -621,6 +621,12 @@ COMIENZA PAGINA ACTIVIDADES */
 .actividades{
     background-color: #BBBFCA;
 }
+/* --------------------------------------------------------------------------------- */
+/* COMIENZA PAGINA GASTRONOMIA */
+
+.grid-gastronomia{
+    grid-area: main;
+}
 
 .gastronomiaUno{
     background-color: #E8E8E8;
