@@ -1,0 +1,717 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&family=Inria+Serif:wght@400;700&family=Londrina+Sketch&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 
+font-family: 'Fredericka the Great', cursive;
+font-family: 'Inria Serif', serif;
+font-family: 'Londrina Sketch', cursive;
+*/
+.grid-index{
+    display: grid;
+    width: 100%;
+
+    grid-template-rows: 5rem 1fr 18.75rem;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+    
+}
+header{
+    grid-area:header;
+    display: flex;
+    background-color: #BBBFCA;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.brc{
+    display: flex;
+    font-family: 'Fredericka the Great', cursive;
+}
+.brc h1{
+    letter-spacing: 4px;
+    font-family: 'Londrina Sketch', cursive;
+    font-size: 3.4375rem
+}
+.brc img{
+    height: 3.4375rem;
+    align-self: center;
+    
+}
+.navbar{
+    display: flex;
+    list-style: none;
+    gap: 1.25rem;
+    padding-right: 1rem;
+}
+
+.navbar li a{
+    text-decoration:none;
+    color: #495464;
+    font-family: 'Inria Serif', serif;
+    font-size: 1.5625rem;
+}
+body{
+    background-color: #F4F4F2;
+}
+
+.grid-main{
+    grid-area: main;
+    display: grid;
+    margin-bottom: 6.25rem;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows:  18.75rem 6.25rem 9.375rem repeat(3,18.75rem);
+}
+.img-index{
+    width: 100%;
+    height: 400px;
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+}
+.img-index img{
+    width: 100%;
+    height: 18.75rem;
+    object-fit: cover;
+    background-color: #BBBFCA;
+    padding: 0 15px 15px 15px;
+}
+
+.titulo-index{
+    grid-column: 1 / 7;
+    grid-row: 2 / 3; 
+    align-self: center;
+    padding-left: 1.25rem;
+
+}
+.texto-intro{
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+    justify-self: center;
+    font-family: 'Inria Serif', serif;
+    padding: 0 .625rem;
+    
+}
+.texto-intro p{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.title{
+    color: #495464;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 3.75rem;
+    font-weight: lighter;
+    padding-left: 1.875rem;
+}
+.subtitle{
+    color: #495464;
+    font-family: 'Fredericka the Great', cursive;
+    font-size: 45px;
+    font-weight: lighter;
+}
+
+.texto-intro{
+    font-family: 'Inria Serif', serif;
+    font-size: 36px;
+}
+.info-general{
+    grid-column: 1 / 7;
+    grid-row: 4 / 7;
+    row-gap: 1.875rem;
+    margin-top: 2rem;
+    margin-bottom: 23w bbn t525rem;
+    display: grid;
+    grid-template-columns: repeat(4,25%);
+    grid-template-rows: repeat(3,18.75rem);
+    padding: 0 1.25rem;
+}
+.seccion1{
+    grid-column: 1 / 5;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    background-color: #BBBFCA;
+    font-family: 'Inria Serif', serif;
+    position: relative;
+}
+.seccion1 h2{
+    letter-spacing: 2px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #E8E8E8;
+    height: 3rem;
+    align-self: flex-start;
+    padding-left: .3125rem;
+    position: absolute;
+    margin-top: -1.5rem;
+    justify-content: center;
+    margin-left: 22rem;
+}
+.seccion1 p{
+    font-size: 22px;
+    font-weight: lighter;
+    text-indent: 16px;
+    height: 70%;
+    text-align: center;
+    margin-top: 1rem;
+}
+.seccion1 img{
+    width: 20rem;
+    height: 18.75rem;
+    align-self: center;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.429);
+}
+.seccion1 button{
+    
+    align-self: flex-end;
+    position: relative;
+    margin-bottom: .625rem;
+    margin-right: .625rem;
+    
+}
+
+.seccion2{
+    grid-column: 1 / 5;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 80%;
+    background-color: #E8E8E8;
+    font-family: 'Inria Serif', serif;
+    display: flex;
+    position: relative;
+}
+.seccion2 h2{
+    letter-spacing: 2px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #BBBFCA;
+    height: 3rem;
+    align-self: flex-start;
+    position: absolute;
+    margin-top: -1.5rem;
+    margin-left: 1.25rem;
+
+}
+
+.seccion2 p{
+    font-size: 22px;
+    font-weight: lighter;
+    text-indent: 16px;
+    text-align: center;
+    margin-top: 3rem;
+}
+.seccion2 img{
+    width: 18.75rem;
+    height: 18.75rem;
+    align-self: center;
+    box-shadow: -5px 5px 5px rgba(128, 128, 128, 0.429);
+}
+
+.seccion2 button{
+    
+    align-self: flex-end;
+    margin-right: .625rem;
+    margin-bottom: .625rem;
+}
+.seccion3{
+    grid-column: 1 / 5;
+    grid-row: 3 / 4;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    background-color: #BBBFCA;
+    font-family: 'Inria Serif', serif;
+}
+.seccion3 h2{
+    letter-spacing: 2px;
+    font-size: 36px;
+    font-weight: bold;
+    background-color: #E8E8E8;
+    height: 3rem;
+    align-self: flex-start;
+    padding-left: .3125rem;
+    position: absolute;
+    margin-top: -1.5rem;
+    justify-content: center;
+    margin-left: 22rem;
+}
+.seccion3 p{
+    font-size: 22px;
+    font-weight: lighter;
+    text-indent: 16px;
+    height: 70%;
+    text-align: center;
+    margin-top: 3rem;
+}
+.seccion3 img{
+    width: 20rem;
+    height: 18.75rem;
+    align-self: center;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.429);
+}
+.seccion3 button{
+    
+    align-self: flex-end;
+    position: relative;
+    margin-bottom: .625rem;
+    margin-right: .625rem;
+    
+}
+
+/* Comienza "Lugares" */
+
+.grid-lugares{
+    
+    display: grid;
+    width: 100%;
+    grid-template-rows: 18.75rem 6.25rem 5rem 20rem 5rem 24rem 5rem 28rem;
+    grid-template-columns: repeat(3,1fr);
+    
+}
+.main-lugares{
+    grid-area: main;
+}
+
+.grid-lugares h2{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    padding-left: 1.25rem;
+}
+    /* COMIENZAN LOS CERROS */
+.cerros {
+    grid-column: 1 / 4;
+    grid-row: 3 / 5;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 5rem 20rem;
+    justify-items: center;
+    padding-right: 1.25rem;   
+    padding-left: 1.25rem;
+}
+.cerros h3 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    padding: 0 1.25rem 0 1.25rem;
+}
+.catedral {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 20rem;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.575);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.catedral img{
+    width: 100%;
+    height: 10rem;
+    justify-items: center;
+    object-fit: cover;
+}
+.tronador{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: 20rem;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.575);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;  
+}
+.tronador img{
+    width: 100%;
+    height: 10rem;
+}
+.campanario{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    height: 20rem;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.575);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;    
+}
+.campanario img{
+    width: 100%;
+    height: 10rem;
+}
+
+/* COMIENZAN LOS LAGOS */
+.lagos {
+    grid-column: 1 / 4;
+    grid: 5 / 7;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 5rem 18.75rem;
+    justify-items: center;
+    padding-right: 1.25rem;   
+    padding-left: 1.25rem;
+}
+.lagos h3{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.huapi {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 24rem;
+    background-color: rgba(128, 128, 128, 0.575);
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    align-items: center;
+    text-align: center;
+}
+.huapi img{
+    width: 100%;
+    height: 12rem;
+}
+.gutierrez{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 24rem;
+    background-color: rgba(128, 128, 128, 0.575);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.25rem;
+    align-items: center;
+    text-align: center;
+    
+}
+.gutierrez img{
+    width: 100%;
+    height: 12rem;
+}
+.moreno{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 24rem;
+    background-color: rgba(128, 128, 128, 0.575);
+    display: flex;
+    flex-direction: column;
+    gap: .625rem;
+    align-items: center;
+    text-align: center;
+}
+.moreno img{
+    width: 100%;
+    height: 12rem;
+}
+/* COMIENZA CIUDAD */
+.ciudad {
+    grid-column: 1 / 4;
+    grid-row: 7 / 9;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 5rem 18.75rem;
+    justify-items: center;
+    padding-right: 1.25rem;   
+    padding-left: 1.25rem;
+}
+.ciudad h3{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+.civico {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    height: 26rem;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.575);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.civico img{
+    width: 100%;
+    height: 13rem;
+}
+.iglesia{
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: 26rem;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.575);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 1.25rem;
+    align-items: center;
+    text-align: center;
+    
+}
+.iglesia img{
+    width: 100%;
+    height: 13rem;
+}
+.suiza{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    height: 26rem;
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0.575);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.suiza img{
+    width: 100%;
+    height: 13rem;
+}
+.lugares{
+    font-family: 'Inria Serif', serif;
+}
+.lugares h4{
+    font-size: 30px;
+    font-weight: bold;
+}
+.lugares p{
+    font-size: 16px;
+    font-weight: lighter;
+}
+
+/* ------------------------------------------------------------------------------ 
+COMIENZA PAGINA ACTIVIDADES */
+
+.main-actividades{
+    grid-area: main;
+    padding-bottom: 40px;
+}
+.grid-actividades{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3, 45rem);
+}
+.invierno {
+    grid-column: 1 / 4;
+    grid-row: 1 / 2;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 5rem 40rem;
+    justify-items: center;
+    padding-right: 1.25rem;   
+    padding-left: 1.25rem;
+}
+.invierno h3{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+}
+.blancas {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    width: 80%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.blancas img {
+    width: 120%;
+    height: 15rem;
+    align-self: center;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.438);
+}
+.blancas button{
+    width: 5rem;
+    align-self: center;
+}
+.nordico {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 80%;
+    justify-content: space-between;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.nordico img {
+    width: 120%;
+    height: 15rem;
+    align-self: center;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.438);
+}
+.nordico button{
+    width: 5rem;
+    align-self: center;
+}
+.arelauquen {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 80%;
+    justify-content: space-between;
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    position: relative;
+}
+.arelauquen img {
+    width: 120%;
+    height: 15rem;
+    align-self: center;
+    box-shadow: 5px 5px 5px rgba(128, 128, 128, 0.438);
+}
+.arelauquen button{
+    width: 5rem;
+    align-self: center;
+}
+
+.verano {
+    grid-column: 1 / 4;
+    grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 5rem 40rem;
+    justify-items: center;
+    padding-right: 1.25rem;   
+    padding-left: 1.25rem;
+}
+.verano h3{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+}
+
+
+.todo-ano {
+    grid-column: 1 / 4;
+    grid-row: 3 / 4;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: 5rem 40rem;
+    justify-items: center;
+    padding-right: 1.25rem;   
+    padding-left: 1.25rem;
+}
+.todo-ano h3{
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-self: center;
+}
+
+.actividades{
+    background-color: #BBBFCA;
+}
+
+.gastronomiaUno{
+    background-color: #E8E8E8;
+}
+.gastronomiaDos{
+    background-color: #BBBFCA;
+}
+
+.contacto{
+    font-family: 'Inria Serif', serif;
+    font-size: 36px;
+    letter-spacing: 0.5px;
+}
+
+.generalContacto{
+    font-family: 'Inria Serif', serif;
+}
+.generalContacto h3{
+    font-size: 36px;
+    font-weight: bold;
+}
+.generalContacto p{
+    font-size: 22px;
+}
+.grid-footer{
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: 20rem 2fr 20rem;
+    grid-template-rows: repeat(2,9.375rem);
+    
+    height: 100%;
+    background-color: hsla(216, 16%, 34%, 0.583);
+    color: white;
+    font-family: 'Inria Serif', serif;
+}
+.ubicacion-footer{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    height: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: space-between;
+    gap: 1.25rem;
+    text-align: center;
+    padding-top: 1.875rem;
+}
+
+.ubicacion-footer iframe{
+    width: 15rem;
+    height: 10rem;
+    align-self: center;
+
+}
+.redes-footer{
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: repeat(2,50%);
+    align-items: center;
+    text-align: center;
+}
+.redes-footer h3{
+    grid-row: 1 / 2;
+    font-size: 2.5rem;
+}
+.redes-footer h5{
+    grid-row: 1 / 2;
+    font-size: 2.5rem;
+}
+.redes-footer div{
+    grid-row: 2 / 3;
+}
+
+.telefono-footer{
+    grid-column: 3 / 4;
+    grid-row: 1 / 2;
+    text-align: center;
+    padding-top: 1.875rem;
+}
+
+.mail-footer{
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    text-align: center;
+}
+footer h3{
+    font-size: 26px;
+}
+footer h5{
+    font-size: 26px;
+}
+footer p{
+    font-size: 16px;
+}
