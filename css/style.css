@@ -509,7 +509,7 @@ COMIENZA PAGINA ACTIVIDADES */
 }
 .grid-actividades{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
+    
     grid-template-rows: repeat(3, 45rem);
 }
 .invierno {
@@ -523,7 +523,7 @@ COMIENZA PAGINA ACTIVIDADES */
     padding-left: 1.25rem;
 }
 .invierno h3{
-    grid-column: 2 / 3;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
     align-self: center;
 }
@@ -551,6 +551,7 @@ COMIENZA PAGINA ACTIVIDADES */
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     width: 80%;
+    height: 40rem;
     justify-content: space-between;
     
     display: flex;
@@ -601,7 +602,7 @@ COMIENZA PAGINA ACTIVIDADES */
     padding-left: 1.25rem;
 }
 .verano h3{
-    grid-column: 2 / 3;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
     align-self: center;
 }
@@ -618,7 +619,7 @@ COMIENZA PAGINA ACTIVIDADES */
     padding-left: 1.25rem;
 }
 .todo-ano h3{
-    grid-column: 2 / 3;
+    grid-column: 1 / 4;
     grid-row: 1 / 2;
     align-self: center;
 }
@@ -858,6 +859,94 @@ COMIENZA PAGINA ACTIVIDADES */
     font-size: 16px;
 }
 /* COMIENZA RESPONSIVE */
+@media (max-width:910px){
+    .grid-actividades{
+        grid-template-rows: repeat(3, 60rem);
+    }
+    .invierno {
+        grid-column: 1 / 4;
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 5rem repeat(3,1fr);
+        justify-items: center;
+        padding-right: 1.25rem;   
+        padding-left: 1.25rem;
+        gap: 2%;
+    }
+    .blancas {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        width: 95%;
+        height: 95%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        position: relative;
+        align-items: center;
+    }
+    .blancas img{
+        width: 15rem;
+        height: 110%;
+    }
+    .nordico {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        width: 95%;
+        height: 95%;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        position: relative;
+        align-items: center;
+    }
+    .nordico img{
+        width: 15rem;
+        height: 110%;
+    }
+    .arelauquen {
+        grid-column: 1 / 4;
+        grid-row: 4 / 5;
+        width: 95%;
+        height: 95%;
+        justify-content: space-between;
+        
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        position: relative;
+        align-items: center;
+    }
+    .arelauquen img{
+        width: 15rem;
+        height: 110%;
+    }
+    .verano {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 5rem repeat(3,1fr);
+        justify-items: center;
+        padding-right: 1.25rem;   
+        padding-left: 1.25rem;
+        gap: 2%;
+    }
+    .todo-ano {
+        grid-column: 1 / 4;
+        grid-row: 3 / 4;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 5rem repeat(3,1fr);
+        justify-items: center;
+        padding-right: 1.25rem;   
+        padding-left: 1.25rem;
+        gap: 2%;
+    }
+    
+}
 @media (max-width:820px){
     .grid-gastronomia{
         display: grid;
@@ -927,77 +1016,7 @@ COMIENZA PAGINA ACTIVIDADES */
         grid-row: 1 / 2;
     }
 }
-@media (max-width:420px){
-    .grid-gastronomia{
-        display: grid;
-        grid-template-rows: repeat(4, 1200px);
-    }
-    .restaurantes{
-        grid-row: 1 / 2;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5rem 16.875rem 16.875rem 16.875rem 16.875rem;
-        justify-items: center;
-    }
-    .restaurantes h3{
-        
-        grid-row: 1 / 2;
-    }
-    .rest1{
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
-    }
 
-    .rest2{
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
-    }
-
-    .rest3{
-        grid-column: 1 / 2;
-        grid-row: 4 / 5;
-    }
-
-    .rest4{
-        grid-column: 1 / 2;
-        grid-row: 5 / 6;
-    }
-    .cervecerias{
-        grid-row: 2 / 3;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5rem 16.875rem 16.875rem 16.875rem 16.875rem;;
-        justify-items: center;
-    }
-    .cervecerias h3{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-    .chocolaterias{
-        grid-row: 3 / 4;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5rem 16.875rem 16.875rem 16.875rem 16.875rem;;
-        justify-items: center;
-    }
-    .chocolaterias h3{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-    .heladerias{
-        grid-row: 4 / 5;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5rem 16.875rem 16.875rem 16.875rem 16.875rem;;
-        justify-items: center;
-    }
-    .heladerias h3{
-        grid-column: 1 / 2;
-        grid-row: 1 / 2;
-    }
-}
-
-    
 
 @media (max-width:768px){
     
@@ -1071,3 +1090,79 @@ COMIENZA PAGINA ACTIVIDADES */
         height: 3.75rem;
     }
 }
+
+@media (max-width:420px){
+    .grid-gastronomia{
+        display: grid;
+        grid-template-rows: repeat(4, 1200px);
+    }
+    .title{
+        padding: 0;
+        text-align: center;
+    }
+    .restaurantes{
+        grid-row: 1 / 2;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5rem 16.875rem 16.875rem 16.875rem 16.875rem;
+        justify-items: center;
+    }
+    .restaurantes h3{
+        
+        grid-row: 1 / 2;
+    }
+    .rest1{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+
+    .rest2{
+        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+    }
+
+    .rest3{
+        grid-column: 1 / 2;
+        grid-row: 4 / 5;
+    }
+
+    .rest4{
+        grid-column: 1 / 2;
+        grid-row: 5 / 6;
+    }
+    .cervecerias{
+        grid-row: 2 / 3;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5rem 16.875rem 16.875rem 16.875rem 16.875rem;;
+        justify-items: center;
+    }
+    .cervecerias h3{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .chocolaterias{
+        grid-row: 3 / 4;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5rem 16.875rem 16.875rem 16.875rem 16.875rem;;
+        justify-items: center;
+    }
+    .chocolaterias h3{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .heladerias{
+        grid-row: 4 / 5;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 5rem 16.875rem 16.875rem 16.875rem 16.875rem;;
+        justify-items: center;
+    }
+    .heladerias h3{
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+}
+
+    
