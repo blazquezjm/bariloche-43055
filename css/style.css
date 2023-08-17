@@ -1019,7 +1019,53 @@ COMIENZA PAGINA ACTIVIDADES */
 
 
 @media (max-width:768px){
-    
+    .grid-actividades{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3,1fr);
+    }
+    .invierno{
+        gap: 1%;
+    }
+    .verano{
+        gap: 1%;
+    }
+    .todo-ano{
+        gap: 1%;
+    }
+    .blancas{
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+    }
+    .blancas img{
+        width: 120%;
+        height: 15rem;
+    }
+    .nordico{
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+    }
+    .nordico img{
+        width: 120%;
+        height: 15rem;
+    }
+    .arelauquen{
+        flex-direction: column;
+        width: 80%;
+        height: 100%;
+    }
+    .arelauquen img{
+        width: 120%;
+        height: 15rem;
+    }
+
+
+
+
+
+
+
     .grid-footer{
         grid-template-columns: repeat(2,50%);
         grid-template-rows: 120px 40px 80px ;
